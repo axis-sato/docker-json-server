@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  json-server:
+    build:
+      context: .
+    volumes:
+       - ./db.json:/data/db.json
+    ports:
+      - 3000:3000
