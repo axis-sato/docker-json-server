@@ -5,6 +5,6 @@ services:
     build:
       context: .
     volumes:
-       - ./db.json:/data/db.json
+       - ./:/data/
     ports:
       - 3000:3000

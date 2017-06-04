@@ -10,6 +10,13 @@ Create a copy of sample_db.json named db.json.
 $ cp sample_db.json db.json
 ```
 
+If you want to add custom routes, create a copy of sample_routes.json named routes.json.
+
+
+```
+$ cp sample_routes.json routes.json
+```
+
 Start a container.
 ```
 $ docker-compose up -d

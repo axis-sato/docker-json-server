@@ -6,4 +6,6 @@ RUN npm install -g json-server
 
 WORKDIR /data
 
-CMD ["json-server", "--watch", "db.json"]
+COPY ./entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
